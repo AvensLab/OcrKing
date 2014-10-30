@@ -177,5 +177,4 @@ url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=你的key&type=http
 </Results>
 
 
-
 本协说明解释权归OcrKing(OcrKing.com)所有。
