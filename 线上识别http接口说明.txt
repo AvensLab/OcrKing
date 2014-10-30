@@ -1,0 +1,177 @@
+//注意
+//启用时间: 2014-09-24
+//此接口支持目前线上所有功能，
+//支持网络文档识别
+//此接口为临时接口，在正式版本发布时可能会停用，停用前会提前通知
+
+//时间: 2014-10-23
+//增加上传文件识别
+//目前大小限制在20K 仅供验证码识别，大文档请用web提交
+
+//本识别服务为免费，没有apiKey 可以 key 为标题
+//任意内容为正文发邮件到 ok（@）ocrking.com 获取
+//可能会有延迟，请匆重复发送
+//授权apiKey,请注意区分大小写
+
+
+//主要参数及可用值如下
+
+// service 识别类型可以为以下value中的值 注意此值区分大小写
+//<option value="OcrKingForPassages">长篇内容</option>
+//<option value="OcrKingForPDF">PDF识别</option>
+//<option value="OcrKingForPhoneNumber">手机电话</option>
+//<option value="OcrKingForPrice">商城价格</option>
+//<option value="OcrKingForNumber">纯数字类</option>
+//<option value="OcrKingForCaptcha">验证码类</option>
+//<option value="BarcodeDecode">条形二维码</option>
+//<option value="PDFToImage">PDF转图片</option>
+
+
+//language 识别语种可以为以下值  eng(英文)   sim(简体) tra(繁体)
+//<option value="eng">英 语</option>												
+//<option value="sim">简 体</option>
+//<option value="tra">繁 体</option>
+
+
+// charset 可以为以下选项 ,仅当service为 OcrKingForCaptcha时 且 language 为 eng有效，其它情况下无效
+//<option value=""></option>
+//<option value="0">所有英文字符</option>
+//<option value="1">所有纯数字</option>
+//<option value="2">小写英文字母</option>
+//<option value="3">大写英文字母</option>
+//<option value="4">数字小写字母</option>
+//<option value="5">数字大写字母</option>
+//<option value="6">大写小写字母</option>
+//<option value="7">数字大写小写</option>
+//<option value="8">常用英文字符</option>
+//<option value="9">网址和邮件类</option>
+//<option value="10">$￥商城价格</option>
+//<option value="11">手机电话号类</option>
+//<option value="12">数学公式计算</option>
+
+
+// type  如果识别为《验证码类》请正确传递验证码图片原始url值 
+//以便服务端进行现有规则匹配进行预处理优化
+//服务端会定时增加对新站图片的预处理支持
+//如果不传递得不到正确的预处理，正确率可能会大幅度下降
+
+
+//请求格式
+
+//请求URL
+  
+		http://lab.ocrking.com/ok.html
+
+//请求头如下
+
+
+POST /ok.html HTTP/1.1
+Accept: */*
+Referer: http://lab.ocrking.com
+Accept-Encoding: gzip
+Accept-Language: zh-cn,zh,en
+Content-Type: application/x-www-form-urlencoded
+Host: lab.ocrking.com
+Content-Length: 2154
+Connection: Keep-Alive
+
+
+//post数据格式如下
+
+url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=&type=
+
+
+//有些开发语言在进行post提交时
+//会自动进行urlencode  有些可能不会
+//如需要识别上传图片 直接在请求中附加上即可
+//图片对应的表单字段名称为  ocrfile
+//如果既指定url又上传文件，则上传文件优化，url指定的文件舍弃
+
+
+
+//识别网络图片
+//url 要识别文档的地址  url应为以http/https/ftp开头的协议
+//应为公网可以正常访问的url
+//如地址 http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ
+//post数据应为
+
+url=http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=
+
+
+//识别本地图片
+//如验证码 https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
+//用各自熟悉的语言保存验证码图片
+//对于本地图片的识别目前有两种方式
+
+//方式一
+////////////对于满足此条件的朋友强烈推荐此方式//////////////
+//优点 比普通上传识别速度快很多
+//缺点 需要本地有web服务或可以搭建web服务
+//需要条件
+//在有公网ip的机器上  如 211.222.235.58 端口 81
+//或可以进行nat端口映射的内网机器上
+//假设web环境已经正常运行 且web的根目录是 d:\wwwroot\
+//假设图片保存到网站根目录下的down文件夹内  d:\wwwroot\down\1158.jpg
+//外网ip 114.126.133.156 外部端口81   
+//内网ip 192.168.1.8 内部端口 81
+//请在路由中进行正确的端口映射   端口和ip请根据实际值的修正
+//此时提供数据的格式和识别网络文件类似
+//有公网ip的机器
+
+url=http://211.222.235.58:81/down/1158.jpg&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
+
+//进行映射过的内网机器
+
+url=http://114.126.133.156:81/down/1158.jpg&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
+
+//注意 请正确传递type为原始url  如果不传此值 服务端不会进行预处理及优化规则匹配 识别正确率可能会大幅度下降
+//不要乱传此值！如 下载A站的验证码   提交时 type传递值为B站的url
+//除非A站和B站的验证码图片大部分特征看起来很像才可以这么做
+//否则可能会得到更差的结果!!  
+////////////对于满足此条件的朋友强烈推荐此方式//////////////
+
+
+
+//方式二 
+//优点 不用做任何额外设置
+//缺点 比方式一慢一点
+//需要条件
+//适用任何可以上网的环境
+//此时提供数据的格式
+//上面示例提交识别时的请求格式应为
+
+url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
+
+//请求中再附加上本地图片的内容
+//图片对应的字段名称为  ocrfile
+//因为每种编程语言http上传文件的方式都有所不同
+//在此代码略过, 上传多个文件时仅会处理第一个文件
+//注意 请正确传递type为原始url  如果不传此值 服务端不会进行预处理及优化规则匹配 识别正确率可能会大幅度下降
+//不要乱传此值！如 下载A站的验证码   提交时 type传递值为B站的url
+//除非A站和B站的验证码图片大部分特征看起来很像才可以这么做
+//否则可能会得到更差的结果!!  
+
+
+
+
+//把上面的请求数据post到  
+//http://lab.ocrking.com/ok.html 
+//就可以得到识别结果
+//请求返回结果为xml，格式如下
+
+<?xml version="1.0" encoding="utf-8"?>
+<Results>
+  <ResultList>
+    <Item>
+      <SrcFile Width="56" Height="22"> 前面高宽会根据图片大小变动，原图url</SrcFile>
+      <DesFile Width="56" Height="22">前面高宽会根据图片大小变动，处理后url</DesFile>
+      <Result>识别结果，长篇内容和PDF识别返回结果url，其它类型识别直接返回结果</Result>
+      <Status>识别状态，true成功，false失败，失败时上面识别结果为原因</Status>
+      <Note />
+    </Item>
+  </ResultList>
+  <Timestamp>1411609928</Timestamp>
+  <Version>3.3.2.1158</Version>
+  <CopyRights>Aven's Lab 2014</CopyRights>
+  <WebSite>http://www.ocrking.com</WebSite>
+</Results>
