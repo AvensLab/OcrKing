@@ -1,0 +1,66 @@
+请求
+
+POST /ok.html HTTP/1.1
+User-Agent: curl/7.19.7 (i386-pc-win32) libcurl/7.19.7 OpenSSL/0.9.8q zlib/1.2.3
+Host: lab.ocrking.com
+Accept: */*
+Content-Length: 2131
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=----------------------------831b7f6f6a2d
+
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="ocrfile"; filename="3.png"
+Content-Type: application/octet-stream
+
+图片
+
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="service"
+
+OcrKingForCaptcha
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="language"
+
+eng
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="type"
+
+http://
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="charset"
+
+7
+------------------------------831b7f6f6a2d
+Content-Disposition: form-data; name="apiKey"
+
+你的apiKey
+------------------------------831b7f6f6a2d--
+
+
+返回
+
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Transfer-Encoding: chunked
+Content-Type: application/xml; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+Date: Wed, 29 Oct 2014 04:48:40 GMT
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<Results>
+  <ResultList>
+    <Item>
+      <SrcFile Width="56" Height="22"> 前面高宽会根据图片大小变动，原图url</SrcFile>
+      <DesFile Width="56" Height="22">前面高宽会根据图片大小变动，处理后url</DesFile>
+      <Result>识别结果，长篇内容和PDF识别返回结果url，其它类型识别直接返回结果</Result>
+      <Status>识别状态，true成功，false失败，失败时上面识别结果为原因</Status>
+      <Note />
+    </Item>
+  </ResultList>
+  <Timestamp>1411609928</Timestamp>
+  <Version>3.3.2.1158</Version>
+  <CopyRights>Aven's Lab 2014</CopyRights>
+  <WebSite>
