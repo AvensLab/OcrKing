@@ -175,3 +175,7 @@ url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=你的key&type=http
   <CopyRights>Aven's Lab 2014</CopyRights>
   <WebSite>http://www.ocrking.com</WebSite>
 </Results>
+
+
+
+本协说明解释权归OcrKing(OcrKing.com)所有。
