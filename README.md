@@ -30,9 +30,10 @@
 
 ```javascript
   var OcrKing = {
-    author  : "Aven",
-    site : "http://lab.ocrking.com",
-    ownerHobby : " Enthusiastic Fan of Image Process && Computer Vision && Machine Learning && NLP "
+    master  : "Aven",
+    from    ："Aven's Lab"
+    site    : "http://lab.ocrking.com",
+    masterHobby : " Enthusiastic Fan of Image Process && Computer Vision && Machine Learning && NLP "
   }
 ```
 
