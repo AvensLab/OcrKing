@@ -1,0 +1,54 @@
+本实例代码为Java实现本地验证码的识别
+依赖库为 httpclient-4.2 使用最新的库 需要修改部分代码
+Author: niostars@gmail.com
+
+	    //构造一个httpclient
+		HttpClient client = new DefaultHttpClient();
+		HttpPost post = new HttpPost(URL);
+		
+		//设置请求头   经过测试 如果需要传入参数 同时要上传文件 http头只能设置为如下代码 或者不予设置
+//		post.addHeader("Accept", "*/*");
+//		post.addHeader("Referer", "http://lab.ocrking.com");
+//		post.addHeader("Accept-Encoding", "gzip");
+//		post.addHeader("Accept-Language", "zh-cn,zh,en");
+//		post.addHeader("Host", "lab.ocrking.com");
+//		post.addHeader("Connection", "Keep-Alive");
+
+		//实例化一个MultipartEntity
+		MultipartEntity entity = new MultipartEntity();
+		
+		try {
+			
+		File file = new File("C:\\getcodeimage.jpg");  
+		entity.addPart("url", new StringBody("","text/plain",Charset.forName("UTF-8")));
+		entity.addPart("service", new StringBody("OcrKingForCaptcha","text/plain",Charset.forName("UTF-8")));
+		entity.addPart("language", new StringBody("eng","text/plain",Charset.forName("UTF-8")));
+		entity.addPart("charset", new StringBody("7","text/plain",Charset.forName("UTF-8")));
+		entity.addPart("apiKey", new StringBody(apiKey,"text/plain",Charset.forName("UTF-8")));
+		entity.addPart("type", new StringBody(type,"text/plain",Charset.forName("UTF-8")));
+			
+			/*addPart 建议使用上面的代码进行设置*/
+//			entity.addPart("url", new StringBody(""));
+//			entity.addPart("service", new StringBody("OcrKingForCaptcha"));
+//			entity.addPart("language", new StringBody("eng"));
+//			entity.addPart("charset", new StringBody("7"));
+//			entity.addPart("apiKey", new StringBody(apiKey));
+//			entity.addPart("type", new StringBody(type));
+			
+			/*加入文件*/
+			entity.addPart("filename",new FileBody(file));
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		
+		try {
+			post.setEntity(entity);
+			System.out.println("executing request="+post.getRequestLine());
+
+			HttpResponse response = client.execute(post);
+			
+			System.out.println("code="+response.getStatusLine().getStatusCode());
+			System.out.println(EntityUtils.toString(response.getEntity()));
+			}
