@@ -2,9 +2,7 @@
 
 [OcrKing](http://lab.ocrking.com)  源自于2009年 [Aven](http://lab.ocrking.com) 一个自用项目，在兴趣和爱好的驱动下积累至今已经五载有余
 
-2010年初为方便更多用户使用，特制作web版文字OCR识别，旨在于方便大家使用传统扫描
-
-文档制作电子文档的同时，提供愉悦体验并推广OCR文字识别技术的应用。从始至今 [OcrKing](http://lab.ocrking.com) 
+2010年初为方便更多用户使用，特制作web版文字OCR识别，从始至今 [OcrKing](http://lab.ocrking.com) 
 
 一直提供免费识别服务，今后将继续提供免费云OCR识别服务。OcrKing从未做过推广，但他就在那里，
 
