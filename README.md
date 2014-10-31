@@ -29,8 +29,8 @@
 ##关于作者
 
 ```javascript
-  var ihubo = {
-    nickName  : "Aven",
+  var OcrKing = {
+    author  : "Aven",
     site : "http://lab.ocrking.com",
     hobby : " Image Process && Computer Vision && Machine Learning && NLP "
   }
