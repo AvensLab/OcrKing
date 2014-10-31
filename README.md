@@ -32,7 +32,7 @@
   var OcrKing = {
     author  : "Aven",
     site : "http://lab.ocrking.com",
-    hobby : " Image Process && Computer Vision && Machine Learning && NLP "
+    ownerHobby : " Enthusiastic Fan of Image Process && Computer Vision && Machine Learning && NLP "
   }
 ```
 
