@@ -1,0 +1,5 @@
+class.ocrking.php 为OcrKing Api必须文件
+OcrKing.php 为使用demo 包含网络图片识别及本地图片识别
+两文件均为gbk编码，utf-8请自行另存
+上传到你的php空间，访问 http://yourname.com/ocrking.php
+可以得到如示例图片 demo.png 结果 
