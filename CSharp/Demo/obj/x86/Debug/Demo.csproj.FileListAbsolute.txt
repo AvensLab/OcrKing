@@ -1,0 +1,8 @@
+J:\OcrKingForGithub\AvenLab\Demo\bin\Debug\Demo.exe.config
+J:\OcrKingForGithub\AvenLab\Demo\bin\Debug\Demo.exe
+J:\OcrKingForGithub\AvenLab\Demo\bin\Debug\Demo.pdb
+J:\OcrKingForGithub\AvenLab\Demo\bin\Debug\AvenLab.dll
+J:\OcrKingForGithub\AvenLab\Demo\bin\Debug\AvenLab.pdb
+J:\OcrKingForGithub\AvenLab\Demo\obj\x86\Debug\Demo.csprojResolveAssemblyReference.cache
+J:\OcrKingForGithub\AvenLab\Demo\obj\x86\Debug\Demo.exe
+J:\OcrKingForGithub\AvenLab\Demo\obj\x86\Debug\Demo.pdb
