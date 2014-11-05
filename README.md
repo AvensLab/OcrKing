@@ -1,8 +1,8 @@
 ## OcrKing 从哪来?
 
-[OcrKing](http://lab.ocrking.com)  源自于2009年初 [Aven](http://lab.ocrking.com) 在数据挖掘中一个自用项目，在兴趣和爱好的驱动下积累至今已经五载有余
+[OcrKing](http://lab.ocrking.com)  源自于2009年初 [Aven](http://lab.ocrking.com) 在数据挖掘中一个自用项目，在技术的执着和爱好的驱动下积累已五载有余
 
-经过多年的积累和迭代，如今已经进化为基于云架构的集多层神经网络与深度学习于一体的OCR识别系统
+经多年的积累和迭代，如今已经进化为基于云架构的集多层神经网络与深度学习于一体的OCR识别系统
 
 2010年初为方便更多用户使用，特制作web版文字OCR识别，从始至今 [OcrKing](http://lab.ocrking.com) 
 
