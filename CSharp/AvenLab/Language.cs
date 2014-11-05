@@ -2,9 +2,6 @@
 // <copyright file="Language.cs" company="Aven's Lab">
 //   QQ 2069798977
 // </copyright>
-// <summary>
-//   The language.
-// </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace AvenLab
@@ -28,5 +25,15 @@ namespace AvenLab
         ///     繁 体
         /// </summary>
         Tra, 
+
+        /// <summary>
+        ///     日 语
+        /// </summary>
+        Jpn, 
+
+        /// <summary>
+        ///     韩 语
+        /// </summary>
+        Kor
     }
 }

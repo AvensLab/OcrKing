@@ -45,7 +45,8 @@ include (S_ROOT .'./class.ocrking.php');
 //<option value="eng">英 语</option>												
 //<option value="sim">简 体</option>
 //<option value="tra">繁 体</option>
-
+//<option value="jpn">日 语</option>
+//<option value="kor">韩 语</option>
 
 // charset 可以为以下选项 ,仅当service为 OcrKingForCaptcha时 且 language 为 eng有效，其它情况下无效
 //<option value=""></option>
