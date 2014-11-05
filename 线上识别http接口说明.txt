@@ -61,7 +61,7 @@
   
 		http://lab.ocrking.com/ok.html
 
-//请求头如下
+//识别网络图片时请求头如下
 
 
 POST /ok.html HTTP/1.1
@@ -137,6 +137,19 @@ url=http://114.126.133.156:81/down/1158.jpg&service=OcrKingForPhoneNumber&langua
 //需要条件
 //适用任何可以上网的环境
 //此时提供数据的格式
+
+//此时上传识别的请求头应如下
+
+POST /ok.html HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 5.1; zh-CN; rv:1.9.1.3) Gecko/20100101 Firefox/8.0
+Host: lab.ocrking.com
+Accept: */*
+Content-Length: 2131
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=----------------------------831b7f6f6a2d
+Connection: Keep-Alive
+
+
 //上面示例提交识别时的请求格式应为
 
 url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
