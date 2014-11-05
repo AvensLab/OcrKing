@@ -1,7 +1,7 @@
 请求
 
 POST /ok.html HTTP/1.1
-User-Agent: curl/7.19.7 (i386-pc-win32) libcurl/7.19.7 OpenSSL/0.9.8q zlib/1.2.3
+User-Agent: Mozilla/5.0 (Windows NT 5.1; zh-CN; rv:1.9.1.3) Gecko/20100101 Firefox/8.0
 Host: lab.ocrking.com
 Accept: */*
 Content-Length: 2131
