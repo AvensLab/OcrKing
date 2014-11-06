@@ -80,7 +80,8 @@ public final class OcrKing {
 			conn.setRequestMethod("POST");
 			conn.setRequestProperty("Connection", "Keep-Alive");
 			conn.setRequestProperty("Referer", "http://lab.ocrking.com/?javaclient0.1)");
-			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN; rv:1.9.2.6)");
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 5.1; zh-CN; rv:1.9.1.3) Gecko/20100101 Firefox/8.0
+");
 			conn.setRequestProperty("Content-Type", "multipart/form-data; boundary=" + boundary);
 
 			OutputStream out = new DataOutputStream(conn.getOutputStream());
