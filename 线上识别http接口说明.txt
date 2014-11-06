@@ -26,7 +26,7 @@
 //<option value="PDFToImage">PDF转图片</option>
 
 
-//language 识别语种可以为以下值  eng(英文)   sim(简体) tra(繁体)
+//language 识别语种可以为以下值  eng(英文)   sim(简体) tra(繁体) jpn(日语) kor(韩语)
 //<option value="eng">英 语</option>												
 //<option value="sim">简 体</option>
 //<option value="tra">繁 体</option>
