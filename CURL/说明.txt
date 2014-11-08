@@ -1,3 +1,4 @@
 curl --form "file=@3.png" --form "service=OcrKingForCaptcha" --form "language=eng" --form "type=http://" --form "charset=7" --form "apiKey=此处替换为邮件回复的key" http://lab.ocrking.com/ok.html
 
+
 字段及可用值请自行参考  【线上识别http接口说明】
