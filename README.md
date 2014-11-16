@@ -27,6 +27,7 @@
 * QQ群①: [296228446](http://shang.qq.com/wpa/qunwpa?idkey=8baf8f5b24d0a19b08a3a18fb5b2600c48fcde2abecf3528376a04059a72e3a6) 交流
 * Weibo: [@OcrKing](http://weibo.com/OcrKing)
 * 欢迎点此  [订阅OcrKing](http://list.qq.com/cgi-bin/qf_invite?id=ade328daacb96f0f2f4375c70ca461bdde76675671e0312d)  重大更新及时知晓！
+* 有github账号的朋友建议 watch 下，以后代码会首先更新于此，没有账号的建议收藏一下！
 
 ##关于作者
 
