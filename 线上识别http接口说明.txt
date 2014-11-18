@@ -21,7 +21,14 @@
 //<option value="OcrKingForPDF">PDF识别</option>
 //<option value="OcrKingForPhoneNumber">手机电话</option>
 //<option value="OcrKingForPrice">商城价格</option>
+
+/********注意********/
 //<option value="OcrKingForNumber">纯数字类</option>
+//这个类型的识别后台有一个单独小库，
+//包括30多种字体的【0-9】数字  
+//如果效果不好你可以用  验证码类+字符集11 试试看
+/********注意********/
+
 //<option value="OcrKingForCaptcha">验证码类</option>
 //<option value="BarcodeDecode">条形二维码</option>
 //<option value="PDFToImage">PDF转图片</option>
