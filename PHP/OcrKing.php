@@ -138,6 +138,7 @@ $var = array (
 				//使用上传方式识别验证码图片时 
 				//这种情况下请传递验证码图片原始url值到type 
 				//以便服务端根据url进行优化规则匹配
+				//此type值只针对此demo中的图片，其它图片请不要用此值
 				'type'    => 'https://www.bestpay.com.cn/api/captcha/getCode?1408294248050'
 );
 
