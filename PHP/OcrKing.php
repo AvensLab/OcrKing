@@ -77,8 +77,8 @@ include (S_ROOT .'./class.ocrking.php');
 //识别参数请根据上面的进行修改
 $var = array (
 				//非验证码类网络图片直接用图片url提交识别
-				//如 http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ
-				'url' =>  'http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ',
+				//如 http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif
+				'url' =>  'http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif',
 				'language' => 'eng', 
 				'service' => 'OcrKingForPhoneNumber', 
 				'charset' => 11,
