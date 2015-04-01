@@ -10,7 +10,8 @@
 //目前大小限制在20K 仅供验证码识别，大文档请用web提交
 
 //本识别服务为免费，按格式发封邮件就可以获取apiKey
-//邮件格式请进群①: [296228446](http://shang.qq.com/wpa/qunwpa?idkey=8baf8f5b24d0a19b08a3a18fb5b2600c48fcde2abecf3528376a04059a72e3a6) 查看
+//邮件格式请进群查看①: 296228446
+//                  ②: 296228429
 //授权apiKey,请注意区分大小写
 
 
@@ -102,10 +103,10 @@ url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=&type=
 //识别网络图片
 //url 要识别文档的地址  url应为以http/https/ftp开头的协议
 //应为公网可以正常访问的url
-//如地址 http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ
+//如地址 http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif
 //post数据应为
 
-url=http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=
+url=http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=
 
 
 //识别本地图片
