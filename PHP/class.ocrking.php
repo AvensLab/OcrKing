@@ -67,7 +67,11 @@ class OcrKing {
 		}
 		
 		if (!empty($this->ocrfile)) {
-			$this->postdata ['ocrfile'] = $this->ocrfile;
+			if (class_exists('\CURLFile')) {				
+					$this->postdata ['ocrfile'] = new \CURLFile($this->ocrfile);
+			 } else {
+					$this->postdata ['ocrfile'] = '@'.$this->ocrfile; 
+			 }
 			if (empty($this->postdata ['type'])) {
 				$this->status = false;
 				$this->errormsg = 'type must be set with the original url of captcha image';return ;
@@ -109,9 +113,9 @@ class OcrKing {
 	}
 	
 	//set file path
-	public function setFilPath($file) {
+	public function setFilePath($file) {
 		if (file_exists($file)) {
-			$this->ocrfile = '@'.$file;
+			$this->ocrfile = $file;
 		}		
 	}	
 	

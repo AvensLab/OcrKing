@@ -152,7 +152,7 @@ $down = getRemoteFile('https://www.bestpay.com.cn/api/captcha/getCode?1408294248
 $ocrking = new OcrKing(API_KEY);
 
 //上传图片识别 请在doOcrKing方法前调用
-$ocrking->setFilPath($down['imagepath']);
+$ocrking->setFilePath($down['imagepath']);
 
 //提交识别
 $ocrking->doOcrKing($var);
