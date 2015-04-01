@@ -9,7 +9,7 @@ uses
   IdIOHandlerSocket, IdSSLOpenSSL;
 
 const
-  API_KEY='550f10baf8e9788e7frzMsMdDAm2xGvYJSYU8kVWF/Pac93CHyd1HrAR/aH7XzVcUCgfg2nkPX+eJFcw';//需要你申请一个apikey
+  API_KEY='';//需要你申请一个apikey
   API_HOST='http://lab.ocrking.com/ok.html';//提交判断的主页
   CONST_VALID_IMAGE='https://www.bestpay.com.cn/api/captcha/getCode?1408294248050'; //获取验证码的页面
 
