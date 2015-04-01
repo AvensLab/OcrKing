@@ -58,7 +58,7 @@ namespace Demo
             ocrKing.Language = Language.Eng;
             ocrKing.Service = Service.OcrKingForPhoneNumber;
             ocrKing.Charset = Charset.PHONENUMBER;
-            ocrKing.ImageUrl = "http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ";
+            ocrKing.ImageUrl = "http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif";
             ocrKing.DoService();
             Console.WriteLine(ocrKing.OcrResult);
         }
