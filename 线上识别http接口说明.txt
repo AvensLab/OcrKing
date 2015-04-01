@@ -135,6 +135,7 @@ url=http://211.222.235.58:81/down/1158.jpg&service=OcrKingForPhoneNumber&languag
 
 url=http://114.126.133.156:81/down/1158.jpg&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
 
+
 //注意 请正确传递type为原始url  如果不传此值 服务端不会进行预处理及优化规则匹配 识别正确率可能会大幅度下降
 //不要乱传此值！如 下载A站的验证码   提交时 type传递值为B站的url
 //除非A站和B站的验证码图片大部分特征看起来很像才可以这么做
