@@ -10,7 +10,8 @@
 //目前大小限制在20K 仅供验证码识别，大文档请用web提交
 
 //本识别服务为免费，按格式发封邮件就可以获取apiKey
-//邮件格式请进群①: [296228446](http://shang.qq.com/wpa/qunwpa?idkey=8baf8f5b24d0a19b08a3a18fb5b2600c48fcde2abecf3528376a04059a72e3a6) 查看
+//邮件格式请进群查看①: 296228446
+//                  ②: 296228429
 //授权apiKey,请注意区分大小写
 
 
@@ -102,10 +103,10 @@ url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=&type=
 //识别网络图片
 //url 要识别文档的地址  url应为以http/https/ftp开头的协议
 //应为公网可以正常访问的url
-//如地址 http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ
+//如地址 http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif
 //post数据应为
 
-url=http://www.e-fa.cn/extend/image.php?auth=EXcQdVFjIkcOPxd1DW4wAF5iNAUJPQ&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=
+url=http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=
 
 
 //识别本地图片
@@ -134,10 +135,13 @@ url=http://211.222.235.58:81/down/1158.jpg&service=OcrKingForPhoneNumber&languag
 
 url=http://114.126.133.156:81/down/1158.jpg&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey=你的key&type=https://www.bestpay.com.cn/api/captcha/getCode?1408294248050
 
+
 //注意 请正确传递type为原始url  如果不传此值 服务端不会进行预处理及优化规则匹配 识别正确率可能会大幅度下降
 //不要乱传此值！如 下载A站的验证码   提交时 type传递值为B站的url
 //除非A站和B站的验证码图片大部分特征看起来很像才可以这么做
-//否则可能会得到更差的结果!!  
+//否则可能会得到更差的结果!! 
+
+ 
 ////////////对于满足此条件的朋友强烈推荐此方式//////////////
 
 
