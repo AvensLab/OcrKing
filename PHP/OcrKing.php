@@ -1,6 +1,6 @@
 <?php
 /*
-*########     [Aven's Lab] (C) 2014 Aven's Lab     ########
+*########     [Aven's Lab] (C) 2015 Aven's Lab     ########
 *########     Time:        2014-11-03                    ########
 *########      File:        GBK OcrKing.php                 ########
 *########     Author:   ÕæÊÓ¾õ   Email: ts@OcrKing.CoM     ########
