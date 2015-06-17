@@ -71,9 +71,17 @@
 
 //请求格式
 
-//请求URL
-  
-		http://lab.ocrking.com/ok.html
+//请求URL 
+ 
+为了能提供更高效的识别服务 我们提供多条识别通道
+
+请使用以下URL获取API请求地址
+
+http://api.ocrking.com/server.html
+
+当你使用的请求地址无法正常访问时 请访问上面URL获取新API请求地址
+
+以下使用 http://lab.ocrking.com/ok.html 做示例
 
 //识别网络图片时请求头如下
 
