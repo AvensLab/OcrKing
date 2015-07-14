@@ -29,6 +29,7 @@
 * Weibo: [@OcrKing](http://weibo.com/OcrKing)
 * 欢迎点此  [订阅OcrKing](http://list.qq.com/cgi-bin/qf_invite?id=ade328daacb96f0f2f4375c70ca461bdde76675671e0312d)  重大更新及时知晓！
 * 有github账号的朋友建议 watch 下，以后代码会首先更新于此，没有账号的建议收藏一下！
+* 对于开源项目或可公开的免费项目，我们可以给予一定技术支持及便利！
 
 ##关于作者
 
