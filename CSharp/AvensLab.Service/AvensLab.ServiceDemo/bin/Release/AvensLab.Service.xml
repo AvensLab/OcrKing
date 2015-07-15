@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AvensLab.Service</name>
+    </assembly>
+    <members>
+        <member name="T:AvensLab.Service.Internal.HttpClient.CallResponse">
+            <summary>
+                The call ret.
+            </summary>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.CallResponse.#ctor(System.Net.HttpStatusCode,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/> class.
+            </summary>
+            <param name="statusCode">
+            The status code.
+            </param>
+            <param name="response">
+            The response.
+            </param>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.CallResponse.#ctor(System.Net.HttpStatusCode,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/> class.
+            </summary>
+            <param name="statusCode">
+            The status code.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.CallResponse.#ctor(AvensLab.Service.Internal.HttpClient.CallResponse)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/> class.
+            </summary>
+            <param name="ret">
+            The ret.
+            </param>
+        </member>
+        <member name="P:AvensLab.Service.Internal.HttpClient.CallResponse.StatusCode">
+            <summary>
+                Gets or sets the status code.
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.Internal.HttpClient.CallResponse.Exception">
+            <summary>
+                Gets or sets the exception.
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.Internal.HttpClient.CallResponse.Response">
+            <summary>
+                Gets or sets the response.
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.Internal.HttpClient.CallResponse.OK">
+            <summary>
+                Gets a value indicating whether ok.
+            </summary>
+        </member>
+        <member name="T:AvensLab.Service.Internal.HttpClient.HttpHelper">
+            <summary>
+                The http helper.
+            </summary>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.UrlEncode(System.String)">
+            <summary>
+            Url encodes the specified string.
+            </summary>
+            <param name="s">
+            The string to url encode.
+            </param>
+            <returns>
+            The url encoded string.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.UrlDecode(System.String)">
+            <summary>
+            Url decodes the specified string.
+            </summary>
+            <param name="s">
+            The string to url decode.
+            </param>
+            <returns>
+            The url decoded string.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.UrlDecode(System.String,System.Text.Encoding)">
+            <summary>
+            The url decode.
+            </summary>
+            <param name="s">
+            The s.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.WriteCharBytes(System.Collections.IList,System.Char,System.Text.Encoding)">
+            <summary>
+            The write char bytes.
+            </summary>
+            <param name="buf">
+            The buf.
+            </param>
+            <param name="ch">
+            The ch.
+            </param>
+            <param name="e">
+            The e.
+            </param>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.GetChar(System.String,System.Int32,System.Int32)">
+            <summary>
+            The get char.
+            </summary>
+            <param name="str">
+            The str.
+            </param>
+            <param name="offset">
+            The offset.
+            </param>
+            <param name="length">
+            The length.
+            </param>
+            <returns>
+            The <see cref="T:System.Int32"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.HttpHelper.GetInt(System.Byte)">
+            <summary>
+            The get int.
+            </summary>
+            <param name="b">
+            The b.
+            </param>
+            <returns>
+            The <see cref="T:System.Int32"/>.
+            </returns>
+        </member>
+        <member name="T:AvensLab.Service.Internal.HttpClient.MultiPart">
+            <summary>
+                The multi part.
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Internal.HttpClient.MultiPart.Version">
+            <summary>
+                版本
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Internal.HttpClient.MultiPart.Referer">
+            <summary>
+                The referer.
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Internal.HttpClient.MultiPart.Encoding">
+            <summary>
+                The encoding.
+            </summary>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.RandomBoundary">
+            <summary>
+                The random boundary.
+            </summary>
+            <returns>
+                The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.FormDataContentType(System.String)">
+            <summary>
+            The form data content type.
+            </summary>
+            <param name="boundary">
+            The boundary.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.MultiPost(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            The multi post.
+            </summary>
+            <param name="url">
+            The url.
+            </param>
+            <param name="formData">
+            The form data.
+            </param>
+            <returns>
+            The <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.MultiPost(System.String,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            The multi post.
+            </summary>
+            <param name="url">
+            The url.
+            </param>
+            <param name="formData">
+            The form data.
+            </param>
+            <param name="fileName">
+            The file name.
+            </param>
+            <returns>
+            The <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.GetPostStream(System.IO.Stream,System.String,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            The get post stream.
+            </summary>
+            <param name="putStream">
+            The put stream.
+            </param>
+            <param name="fileName">
+            The file name.
+            </param>
+            <param name="formData">
+            The form data.
+            </param>
+            <param name="boundary">
+            The boundary.
+            </param>
+            <returns>
+            The <see cref="T:System.IO.Stream"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.GetPostStream(System.String,System.Collections.Specialized.NameValueCollection,System.String)">
+            <summary>
+            The get post stream.
+            </summary>
+            <param name="filePath">
+            The file path.
+            </param>
+            <param name="formData">
+            The form data.
+            </param>
+            <param name="boundary">
+            The boundary.
+            </param>
+            <returns>
+            The <see cref="T:System.IO.Stream"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.MultiPart.HandleResult(System.Net.HttpWebResponse)">
+            <summary>
+            The handle result.
+            </summary>
+            <param name="response">
+            The response.
+            </param>
+            <returns>
+            The <see cref="T:AvensLab.Service.Internal.HttpClient.CallResponse"/>.
+            </returns>
+        </member>
+        <member name="T:AvensLab.Service.Models.Language">
+            <summary>
+                目前可以识别的语种.
+            </summary>
+            <remarks>
+                <para>
+                    目前支持英文,中文,繁体中文,日语，韩语
+                </para>
+            </remarks>
+        </member>
+        <member name="F:AvensLab.Service.Models.Language.Eng">
+            <summary>
+                英 语
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Language.Sim">
+            <summary>
+                简 体
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Language.Tra">
+            <summary>
+                繁 体
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Language.Jpn">
+            <summary>
+                日 语
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Language.Kor">
+            <summary>
+                韩 语
+            </summary>
+        </member>
+        <member name="T:AvensLab.Service.OcrKing">
+            <summary>
+                识别转换类.
+            </summary>
+            <remarks>
+                <para>
+                    目前支持的服务有 长篇识别 PDF识别 手机电话号
+                    纯数字 商城价格 验证码类 条形二维码 PDF转图片
+                </para>
+            </remarks>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.DefaultApiUrl">
+            <summary>
+                默认服务器请求地址
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.apiUrl">
+            <summary>
+                请求提交地址
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.formData">
+            <summary>
+                提交数据
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.apiKey">
+            <summary>
+                授权字串
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.charset">
+            <summary>
+                字符集
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.filePath">
+            <summary>
+                图片本地路径
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.fileUrl">
+            <summary>
+                网络图片的url
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.haveDoneService">
+            <summary>
+                提交状态
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.language">
+            <summary>
+                识别语种
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.ocrResult">
+            <summary>
+                识别结果
+            当processStatus为true时 返回识别结果xml文本
+            当processStatus为false时 返回 错误消息 格式为   Error：错误消息
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.response">
+            <summary>
+                请求响应
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.service">
+            <summary>
+                服务类型
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.type">
+            <summary>
+                type值
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.OcrKing.processStatus">
+            <summary>
+            请求状态
+            请求成功且没有异常时才为true
+            </summary>
+        </member>
+        <member name="M:AvensLab.Service.OcrKing.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AvensLab.Service.OcrKing"/> class.
+            </summary>
+            <param name="apiKey">
+            授权ApiKey,获取方式请看群共享中的文档说明
+            </param>
+        </member>
+        <member name="M:AvensLab.Service.OcrKing.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AvensLab.Service.OcrKing"/> class.
+            </summary>
+            <param name="apiKey">
+            授权ApiKey,获取方式请看群共享中的文档说明
+            </param>
+            <param name="apiUrl">
+            服务请求地址,当您使用的地址不能正常访问时
+                请通过 http://api.ocrking.com/server.html 获取
+                后台不定时增加或减少请求地址，
+            </param>
+        </member>
+        <member name="M:AvensLab.Service.OcrKing.DoService">
+            <summary>
+                发送请求
+            </summary>
+            <exception cref="T:System.Exception"> filePath and fileUrl can not be null at the same time </exception>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.ApiKey">
+            <summary>
+                授权字串
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.Charset">
+            <summary>
+                字符集
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.FilePath">
+            <summary>
+                图片本地路径
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.FileUrl">
+            <summary>
+                网络图片url
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.Language">
+            <summary>
+                识别语种
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.OcrResult">
+            <summary>
+                识别结果
+            当processStatus为true时 返回识别结果xml文本
+            当processStatus为false时 返回 错误消息 格式为   Error： 错误消息
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.Service">
+            <summary>
+                服务类型
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.Type">
+            <summary>
+                type值
+            </summary>
+        </member>
+        <member name="P:AvensLab.Service.OcrKing.ProcessStatus">
+            <summary>
+            请求状态
+            请求成功且没有异常时才为true
+            </summary>
+        </member>
+        <member name="T:AvensLab.Service.Models.Service">
+            <summary>
+                目前支持的服务类型.
+            </summary>
+            <remarks>
+                <para>
+                    目前支持的服务有 长篇识别 PDF识别 手机电话号
+                    纯数字 商城价格 验证码类 条形二维码 PDF转图片
+                </para>
+            </remarks>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForPassages">
+            <summary>
+                长篇内容
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForPDF">
+            <summary>
+                PDF识别
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForPhoneNumber">
+            <summary>
+                手机电话
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForPrice">
+            <summary>
+                商城价格
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForNumber">
+            <summary>
+                纯数字类
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.OcrKingForCaptcha">
+            <summary>
+                验证码类
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.BarcodeDecode">
+            <summary>
+                条形二维码
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Service.PDFToImage">
+            <summary>
+                PDF转图片
+            </summary>
+        </member>
+        <member name="T:AvensLab.Service.Models.Charset">
+            <summary>
+                识别内容字符集.
+            </summary>
+            <remarks>
+                <para>
+                    对非CJK(中日韩)类内容的验证码识别时,正确使用
+                    字符集可以大大提高识别结果的正确率
+                </para>
+            </remarks>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Default">
+            <summary>
+                所有英文字符
+            </summary>
+            <para>
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Digit">
+            <summary>
+                数字
+            </summary>
+            <para>
+                字符集包括 0-9
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Lower">
+            <summary>
+                小写英文字母
+            </summary>
+            <remarks>
+                <para>
+                    字符集包括 a-z
+                </para>
+            </remarks>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Upper">
+            <summary>
+                大写英文字母
+            </summary>
+            <para>
+                字符集包括 A-Z
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.DigitLower">
+            <summary>
+                数字和小写字母
+            </summary>
+            <para>
+                字符集包括 0-9 a-z
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.DigitUpper">
+            <summary>
+                数字和大写字母
+            </summary>
+            <para>
+                字符集包括 0-9 A-Z
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.LowerUpper">
+            <summary>
+                大写和小写字母
+            </summary>
+            <para>
+                字符集包括 a-z A-Z
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.DigitLowerUpper">
+            <summary>
+                数字小写大写字母
+            </summary>
+            <para>
+                字符集包括 0-9 A-Z A-Z
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.CommonWords">
+            <summary>
+                The common words.
+            </summary>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.EmailUrl">
+            <summary>
+                电子邮件和网址
+            </summary>
+            ///
+            <para>
+                字符集包括 0-9 A-Z A-Z @:/.-_#?%=
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Price">
+            <summary>
+                商城价格
+            </summary>
+            <para>
+                字符集包括 0-9.￥$
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.PhoneNumber">
+            <summary>
+                电话号码
+            </summary>
+            <para>
+                字符集包括 0123456789-
+            </para>
+        </member>
+        <member name="F:AvensLab.Service.Models.Charset.Math">
+            <summary>
+                数学运算
+            </summary>
+            <para>
+                字符集包括 0123456789+-*X/=?
+            </para>
+        </member>
+        <member name="T:AvensLab.Service.Internal.HttpClient.Base64UrlSafe">
+            <summary>
+                The base 64 url safe.
+            </summary>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.Base64UrlSafe.Encode(System.String)">
+            <summary>
+            The encode.
+            </summary>
+            <param name="text">
+            The text.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.Base64UrlSafe.ToBase64UrlSafe(System.String)">
+            <summary>
+            string扩展方法，生成base64UrlSafe
+            </summary>
+            <param name="str">
+            string
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:AvensLab.Service.Internal.HttpClient.Base64UrlSafe.Encode(System.Byte[])">
+            <summary>
+            The encode.
+            </summary>
+            <param name="bs">
+            The bs.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+    </members>
+</doc>
