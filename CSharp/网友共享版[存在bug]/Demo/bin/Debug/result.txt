@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Results>
+  <ResultList>
+    <Item>
+      <SrcFile Width="99" Height="20">http://file1.ocrking.net:88/small/20141105/w4Zrw4VpfcOPwoXCrMK7wp57wq3CjWJmdg/fba4a4c7-3f47-4bfd-a0b7-006d755c5805.png?FjFT6BhFO72otX91K1xiGj3q53nCngyhYk1AQ7SBeFP4FXd9pm45FQjeseWcSPrw</SrcFile>
+      <DesFile Width="99" Height="20">http://file1.ocrking.net:88/small/20141105/w4Zrw4VpfcOPwoXCrMK7wp57wq3CjWJmdg/fba4a4c7-3f47-4bfd-a0b7-006d755c5805_debug.png?FjFT6BhFO72otX91K1xiGj3q53nCngyhYk1AQ7SBeFP4FXd9pm45FQjeseWcSPrw</DesFile>
+      <Result>15201124022</Result>
+      <Status>true</Status>
+      <Note />
+    </Item>
+  </ResultList>
+  <Timestamp>1415122384</Timestamp>
+  <Version>3.3.2.1158</Version>
+  <CopyRights>Aven's Lab 2014</CopyRights>
+  <WebSite>http://www.ocrking.com</WebSite>
+</Results>
+<?xml version="1.0" encoding="utf-8"?>
+<Results>
+  <ResultList>
+    <Item>
+      <SrcFile Width="72" Height="24">http://file3.ocrking.net:88/small/20141105/w4jClsKUaMKuwp3Cu8KswpPCpHnCqcKNZWbCoQ/02c8bbc2-8ab8-4477-a77f-854bfdd24419.png?YZ2yxRhogd8ZoYE5gwhAgcHXhw5Xh0SpjBJPVTq2lMNaDshjSAKlsYPI6P2z3ySA</SrcFile>
+      <DesFile Width="72" Height="24">http://file3.ocrking.net:88/small/20141105/w4jClsKUaMKuwp3Cu8KswpPCpHnCqcKNZWbCoQ/02c8bbc2-8ab8-4477-a77f-854bfdd24419_debug.png?YZ2yxRhogd8ZoYE5gwhAgcHXhw5Xh0SpjBJPVTq2lMNaDshjSAKlsYPI6P2z3ySA</DesFile>
+      <Result>Ckkq</Result>
+      <Status>true</Status>
+      <Note />
+    </Item>
+  </ResultList>
+  <Timestamp>1415122384</Timestamp>
+  <Version>3.3.2.1158</Version>
+  <CopyRights>Aven's Lab 2014</CopyRights>
+  <WebSite>http://www.ocrking.com</WebSite>
+</Results>
