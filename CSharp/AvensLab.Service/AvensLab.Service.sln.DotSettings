@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">Copyright (c) 2009 - $CURRENT_YEAR$, Aven's Lab. All rights reserved.&#xD;
+                  http://www.ocrking.com&#xD;
+DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.&#xD;
+ $Id: OcrKing.java,v 0.1 $CURRENT_YEAR$/$CURRENT_MONTH$/$CURRENT_DAY$ $CURRENT_TIME$ $&#xD;
+The c# script for OcrKing Api&#xD;
+By Aven &lt;Aven@OcrKing.Com&gt;&#xD;
+Welcome to follow us &#xD;
+http://weibo.com/OcrKing&#xD;
+http://t.qq.com/OcrKing&#xD;
+Warning! &#xD;
+Before running this script , you should modify some parameter&#xD;
+within the post data according to what you wanna do</s:String></wpf:ResourceDictionary>

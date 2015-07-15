@@ -1,0 +1,6 @@
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\bin\Release\NET2\AvensLab.Service.dll
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\bin\Release\NET2\AvensLab.Service.pdb
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\obj\Release\AvensLab.Service.dll
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\obj\Release\AvensLab.Service.pdb
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\obj\Release\AvensLab.Service.csprojResolveAssemblyReference.cache
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.Service\bin\Release\NET2\AvensLab.Service.XML
