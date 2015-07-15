@@ -1,0 +1,11 @@
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\bin\Release\AvensLab.ServiceDemoGui.exe
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\bin\Release\AvensLab.ServiceDemoGui.pdb
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.csprojResolveAssemblyReference.cache
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.MainForm.resources
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.Properties.Resources.resources
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.csproj.GenerateResource.Cache
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.exe
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\obj\x86\Release\AvensLab.ServiceDemoGui.pdb
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\bin\Release\AvensLab.Service.dll
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\bin\Release\AvensLab.Service.pdb
+E:\Work\AvensLab\OpenApi\Projects\AvensLab.Service\AvensLab.ServiceDemoGui\bin\Release\AvensLab.Service.xml
