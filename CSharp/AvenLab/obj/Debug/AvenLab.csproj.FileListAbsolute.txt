@@ -1,5 +1,0 @@
-J:\OcrKingForGithub\AvenLab\AvenLab\bin\Debug\AvenLab.dll
-J:\OcrKingForGithub\AvenLab\AvenLab\bin\Debug\AvenLab.pdb
-J:\OcrKingForGithub\AvenLab\AvenLab\obj\Debug\AvenLab.dll
-J:\OcrKingForGithub\AvenLab\AvenLab\obj\Debug\AvenLab.pdb
-J:\OcrKingForGithub\AvenLab\AvenLab\obj\Debug\AvenLab.csprojResolveAssemblyReference.cache
