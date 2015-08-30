@@ -77,6 +77,10 @@ image = open('D:\\Program Files\\IronPython-2.7.3\\111.png', "rb")
 # e.x 004.png #
 file = [('ocrfile','004.png',image.read())]
 # you need to modify parameters according to OcrKing Api Document #
+# 如果不传递原始url到type或乱传一个地址到type 结果很可能就是错的 #
+# 如果想禁止后台做任何预处理  type可以设为 http://www.nopreprocess.com #
+# 如果确实不确定验证码图片的原url  type可以设为 http://www.unknown.com  此时后台只进行常用预处理 #
+# 此demo中type值只针对此demo中的图片，其它网站图片请不要用此值 #
 fields = [('url',''),('service', 'OcrKingForCaptcha'),('language','eng'),('charset','7'),('apiKey', key),('type','https://www.bestpay.com.cn/api/captcha/getCode?1408294248050')]
 # just fire the post action #
 xml = post_multipart(fields,file)

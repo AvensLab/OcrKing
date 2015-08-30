@@ -48,6 +48,10 @@ public final class OcrKing {
 		dataMap.put("service", "OcrKingForCaptcha");
 		dataMap.put("language", "eng");
 		dataMap.put("charset", "7");
+		// 如果不传递原始url到type或乱传一个地址到type 结果很可能就是错的
+        // 如果想禁止后台做任何预处理  type可以设为 http://www.nopreprocess.com
+        // 如果确实不确定验证码图片的原url  type可以设为 http://www.unknown.com  此时后台只进行常用预处理
+		//此demo中type值只针对此demo中的图片，其它网站图片请不要用此值
 		dataMap.put("type", "https://www.bestpay.com.cn/api/captcha/getCode?1408294248050");
 		// you need to modify parameters according to OcrKing Api Document 
 
