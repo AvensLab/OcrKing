@@ -125,10 +125,11 @@ namespace AvensLab.ServiceDemo
 
             // 设置要上传的图片路径, 必须是绝对路径 如 c:\test.png
             ocrKing.FilePath = Environment.CurrentDirectory + "\\test.png";
-
-            // 上传识别时url可以省略 但此时请传原始验证码的地址到type
+            
+			// 上传识别时url可以省略 但此时请传原始验证码的地址到type
             // 方便服务端进行优化匹配  不然结果可能完全不同
-            // 如果传递原始url到type 结果是 ckkq 正确的, 
+            // 如果传递原始url到type 结果是 ckkq 正确的,
+			//此demo中type值只针对此demo中的图片，其它网站图片请不要用此值 
             ocrKing.Type = "https://www.bestpay.com.cn/api/captcha/getCode?1408294248050";
 
             // 如果不传递原始url到type或乱传一个地址到type 结果很可能就是错的

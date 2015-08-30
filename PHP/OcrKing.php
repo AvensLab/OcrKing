@@ -138,7 +138,10 @@ $var = array (
 				//使用上传方式识别验证码图片时 
 				//这种情况下请传递验证码图片原始url值到type 
 				//以便服务端根据url进行优化规则匹配
-				//此type值只针对此demo中的图片，其它图片请不要用此值
+				//此demo中type值只针对此demo中的图片，其它网站图片请不要用此值
+				// 如果不传递原始url到type或乱传一个地址到type 结果很可能就是错的
+                // 如果想禁止后台做任何预处理  type可以设为 http://www.nopreprocess.com
+                // 如果确实不确定验证码图片的原url  type可以设为 http://www.unknown.com  此时后台只进行常用预处理
 				'type'    => 'https://www.bestpay.com.cn/api/captcha/getCode?1408294248050'
 );
 
