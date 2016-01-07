@@ -1,6 +1,6 @@
 ## OcrKing 从哪来?
 
-[OcrKing](http://lab.ocrking.com)  源自2009年初 [Aven](http://weibo.com/OcrKing) 在数据挖掘中的自用项目，在对技术的执着和爱好的驱动下积累六载有余
+[OcrKing](http://lab.ocrking.com)  源自2009年初 [Aven](http://weibo.com/OcrKing) 在数据挖掘中的自用项目，在对技术的执着和爱好的驱动下积累已近七载
 
 经多年的积累和迭代，如今已经进化为云架构的集多层神经网络与深度学习于一体的OCR识别系统
 
@@ -8,7 +8,7 @@
 
 一直提供免费识别服务及开发接口，今后将继续提供免费云OCR识别服务。OcrKing从未做过推广，
 
-但他就在那里，因为他相信有需求的朋友肯定能找得到。   
+但也确确实实默默地存在，因为他相信有需求的朋友肯定能找得到。   
 
 欢迎把 [OcrKing](http://lab.ocrking.com) 在线识别介绍给您身边有类似需求的朋友！
 
@@ -38,7 +38,7 @@
     master  : "Aven",
     from    ："Aven's Lab"
     site    : "http://lab.ocrking.com",
-    masterHobby : "Image Process && Computer Vision && Machine Learning && Data Mining && NLP"
+    interest : "Image Process && Computer Vision && Machine Learning && Data Mining && NLP"
   }
 ```
 
