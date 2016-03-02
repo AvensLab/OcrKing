@@ -1,18 +1,18 @@
-�������ϰ汾�е��Զ���ݲ�ԭ��֧��json/jsonp
-Ϊ�������д�����������ѣ���ʱ��һ���������ַ
-���°汾����ǰ���������ַ����䶯���Ƴ�������
-���Է���ʹ�ã����°�api��������ʱ���������ַ��
-�ӳ�һ��ʱ�����ߣ���ʱ����ǰ֪ͨ��ҡ�
+由于线上版本有点久远，暂不原生支持json/jsonp
+为了满足有此类需求的朋友，临时增一单独请求地址
+在新版本更新前，此请求地址不会变动或移除，所有
+可以放心使用，等新版api更新上线时，此请求地址会
+延迟一定时间下线，届时会提前通知大家。
 
-json/jsonp��ʽ�������ַΪ �� http://lab.ocrking.com/json
+返回json/jsonp格式结果的请求地址为 ： http://lab.ocrking.com/json
 
-֧�ֵķ��� �� GET��POST 
+支持的方法 ： GET和POST 
 
-��Ҫ�������ֲ��䣬��ϸ˵����μ� ������ʶ��http�ӿ�˵��.txt��
+主要参数保持不变，详细说明请参见 【线上识别http接口说明.txt】
 
-���Ӳ��� callback ���ڻص���������callbackֵΪ��ʱ���ر�׼json���
+增加参数 callback 用于回调处理，当callback值为空时返回标准json结果
 
-���� ���������ַ��֧��url��ʽʶ���ݲ�֧���ϴ�ʶ��
+限制 ：此请求地址仅支持url方式识别，暂不支持上传识别
 
 
 
