@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>OcrKing Js使用示例</title>
+		<meta http-equiv="x-ua-compatible" content="ie=7" />
+		<meta name="copyright" content="ocrking.com" />
+		<meta http-equiv="pragma" content="no-cache" /> 
+		<meta http-equiv="cache-control" content="no-cache" /> 
+		<meta http-equiv="expires" content="0" /> 
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="keywords" content="在线ocr识别,图片识别,验证码识别,在线pdf识别,在线二维码识别,图片识别引擎,在线文字识别网站,免费在线PDF转文本,免费在线图片转文本,免费在线图片识别,免费多语种文字识别,免费在线OCR,ocrking Aven's Lab,free online ocr,text recognition" />
+		<meta name="description" content="OcrKing是一款在线光学字符识别引擎，分为图片识别和pdf识别，分为英文,中文简体，繁体识别,可以上传在线识别,阿里巴巴供求采集工具,58同城赶集口碑联系方式识别,在线ocr识别,图片识别,验证码识别,在线pdf识别,图片识别引擎,在线图片识别网站,免费在线PDF转文本,ocrking.com,Extract text from images" />
+		<script type="text/javascript" src="http://static.ocrking.com/www/v1.8/js/jquery-form.js"></script>
+		<link rel="shortcut icon" href="http://lab.ocrking.com/favicon.ico" type="image/x-icon"/>
+	</head>
+    <script type="text/javascript">
+    var ocrkingCallback = function (data) {
+        // 返回结果为json 结构请参照下面示例内容        //{"ResultList":{"Item":{"SrcFile":"","DesFile":"","Result":"","Status":"true","Note":""}},"Timestamp":"1456897602","Version":"3.3.2.1158","CopyRights":"Aven's Lab 2015","WebSite":"http:\/\/www.ocrking.com"}
+        // 请用邮件获取的 apiKey 替换下面的 {APIKEY}
+    	alert('识别结果是：' + data.ResultList.Item.Result);
+    };
+    </script>
+	<body>
+    <script type="text/javascript" src="http://lab.ocrking.com/json?url=http://t.51chuli.com/contact/d827323fa035a7729w060771msa9211z.gif&service=OcrKingForPhoneNumber&language=eng&charset=11&apiKey={APIKEY}&type=&callback=ocrkingCallback"></script>
+    </body>
+    </html>
+
