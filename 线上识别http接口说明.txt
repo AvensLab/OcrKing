@@ -12,7 +12,7 @@
 
 //时间: 2014-10-23
 //增加上传文件识别
-//目前大小限制在20K 仅供验证码识别，大文档请用web提交
+//目前大小限制在20K 仅供验证码识别，大文档请用url方式提交
 
 //本识别服务为免费，按格式发封邮件就可以获取apiKey
 //邮件格式请进群查看①: 296228446
@@ -220,5 +220,6 @@ url=&service=OcrKingForCaptcha&language=eng&charset=7&apiKey=你的key&type=http
   <WebSite>http://www.ocrking.com</WebSite>
 </Results>
 
+//如要返回json格式结果请看 [json&jsonp](https://github.com/AvensLab/OcrKing/blob/master/Js/%E8%AF%B4%E6%98%8E.txt)
 
 本文档解释权归OcrKing(OcrKing.com)所有。
