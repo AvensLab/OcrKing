@@ -1,0 +1,25 @@
+//AArdio OCRking 验证码识别开发代码  
+import console; 
+import inet.http
+import web.multipartFormData;
+
+var key=""    //官方提供的key
+
+var rUrl = "http://lab.ocrking.com/ok.html";
+var ocrtype = 7// 英文字符=0 纯数字=1 小写英文=2 大写英文=3 数字小写=4 数字大写=5 大写小写=6
+              // 数字大小写=7 常用英文=8 网址邮件=9 $￥商城价格=10 手机电话号=11 数学公式计算=12
+var upForm = web.multipartFormData()
+upForm.add("service", "OcrKingForCaptcha")  
+upForm.add("language","eng")
+upForm.add("charset",ocrtype )
+upForm.add("type","http://user.56.com/api/get_auth.php?t=56_reg&rnd=0.5675823935307562")
+upForm.add("apiKey",key)   
+upForm.add("ocrfile", "")
+upForm.add("image/bmp", "@D:\1.jpg")     //要识别的验证码图片文件路径
+
+var result = string.fromto(inet.http().post(rUrl,upForm.readAll(),{ ["Content-Type"] = upForm.contentType() }));
+
+code=string.match(result,"\<Result\>(.+)\</Result\>")
+console.log(code)      //显示验证码
+
+execute("pause")  
