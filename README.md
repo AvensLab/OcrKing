@@ -27,7 +27,7 @@
 * 开发交流群①: [296228446 2014-06-18开放](http://shang.qq.com/wpa/qunwpa?idkey=8baf8f5b24d0a19b08a3a18fb5b2600c48fcde2abecf3528376a04059a72e3a6) (如满请加群②)
 * 开发交流群②: [296228429 2015-01-12开放](http://shang.qq.com/wpa/qunwpa?idkey=4dd67a57b9feb0e3f9435f47ad9f51632facfbddda4a0b9b983d4d5819047d7c) (如满请加群③)
 * 开发交流群③: [239139557 2016-03-03开放](http://shang.qq.com/wpa/qunwpa?idkey=b9d4deadd50218ed8027f25ce7ada4cfee180da1a7e742cb8b380c0499042989) (如满请加群④)
-* 开发交流群④: [61033112 2015-01-12开放](http://shang.qq.com/wpa/qunwpa?idkey=e4cb628e6c1d7a13d8c6dc370253c13483b46fef67277c0ca4a9f988042e6ac4) 
+* 开发交流群④: [61033112 2016-07-07开放](http://shang.qq.com/wpa/qunwpa?idkey=e4cb628e6c1d7a13d8c6dc370253c13483b46fef67277c0ca4a9f988042e6ac4) 
 * Weibo: [@OcrKing](http://weibo.com/OcrKing)
 * 欢迎点此  [订阅OcrKing](http://list.qq.com/cgi-bin/qf_invite?id=ade328daacb96f0f2f4375c70ca461bdde76675671e0312d)  重大更新及时知晓！
 * 有github账号的朋友建议 watch 下，以后代码会首先更新于此，没有账号的建议收藏一下！
