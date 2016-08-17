@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>按键精灵命令库帮助</title>
+<style>
+body{font-size:12px; font-family:Verdana,"宋体"}
+.ts{ background:#fff; margin:0 0 40px 0;}
+.ts th{ color:#7B797B; background:#DEDFDE; line-height:24px;}
+.ts td {padding:6px 0;}
+.name { font-size:16px; font-weight:bold; border-top:1px dashed #9C9A9C; border-bottom:1px dashed #9C9A9C; color:#006939;}
+.canshu { background:#E7E7EF;}
+.red{ color:#d60000;}
+.green{ color:#006939;}
+.fanhui{ border-bottom:1px dashed #9C9A9C;}
+.lizi{ border-bottom:1px dashed #9C9A9C;}
+</style></head><body>
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1" class="ts">
+<tr><th width="100px">命令名称：</th><td class="name">
+<a name="键盘组合键"></a>OCRIKIG
+</td></tr><tr><th>命令功能：</th><td>
+图片识别
+</td></tr><tr><th>命令参数：</th><td class="canshu"><pre>
+参数1 字符串型，图片路径
+参数2 整数型，图片类型编号
+参数3 字符串型，语言类型
+参数4 字符串型，key
+参数5 字符串型，接口链接
+</td></tr><tr><th>返回值：</th><td class="fanhui">
+字符串型,识别内容
+</td></tr><tr><th>脚本例子：<br /><span class="red">按键精灵8及<br />以上语法</span>
+</th><td class="lizi"><pre>
+ key="邮件获取的key"
+ 接口="http://lab.ocrking.com/ok.html"
+ 返回值=Lib.OCRKING_API.OCRKING("C:\1.bmp",7,"eng",key,接口)
+<span class="green">//key 通过发邮件到 ok@ocrking.com 获取,邮件格式详见命令库注释</span>
+</td></tr></table>
+
+</body>
+</html>
