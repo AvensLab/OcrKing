@@ -6,7 +6,6 @@ MacroID=2811fb4a-9f42-41fc-80f3-022282e5706b
 [Script]
 //分享作者:红妆
 //QQ:394053565
-
 //关于type  如果不传递原始url到type或乱传一个地址到type 结果很可能就是错的
 //http://www.unknown.com  后台只进行常用预处理
 //http://www.nopreprocess.com  禁止后台做任何预处理
@@ -122,7 +121,7 @@ Sub AddEnd(ByVal strBoundary)
     objTemp.Position = 2
 End Sub
 Function Upload(ByVal strURL,ByVal strBoundary)
-    Call Lib.OCRKING.AddEnd(strBoundary)
+    Call AddEnd(strBoundary)
     xmlHttp.Open "POST", strURL, False
     xmlHttp.setRequestHeader "Content-Type", "multipart/form-data; boundary=" & strBoundary
     xmlHttp.setRequestHeader "Content-Length", objTemp.size
@@ -149,3 +148,4 @@ Function Class_Initialize()
     objTemp.Open
     Class_Initialize=GetBoundary()
 End Function
+
