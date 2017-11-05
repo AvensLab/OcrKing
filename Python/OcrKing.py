@@ -1,5 +1,5 @@
 ####
-# Copyright (c) 2009 - 2015, Aven's Lab. All rights reserved.
+# Copyright (c) 2009 - 2017, Aven's Lab. All rights reserved.
 #                     http://www.ocrking.com
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
 # Id: OcrKing.py,v 0.1 2014/10/29 23:40:18 
