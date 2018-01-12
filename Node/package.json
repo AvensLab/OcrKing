@@ -1,0 +1,28 @@
+{
+  "name": "ocrking",
+  "version": "1.0.0",
+  "description": "OcrKing for Node",
+  "main": "OcrKing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smackgg/OcrKing.git"
+  },
+  "keywords": [
+    "OcrKing",
+    "Node",
+    "captha"
+  ],
+  "author": "smackgg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smackgg/OcrKing/issues"
+  },
+  "homepage": "https://github.com/smackgg/OcrKing#readme",
+  "dependencies": {
+    "node-xml2json": "^1.0.0",
+    "request": "^2.81.0"
+  }
+}
